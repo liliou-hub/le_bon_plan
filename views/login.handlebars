@@ -1,0 +1,14 @@
+{{#if isLog }}
+    {{> navbarLogin }}
+    {{else }}
+    {{> navbarLogout }}
+    {{/if}}
+
+<form action="/login" method="POST">
+  <h2>Username</h2>
+  <input type="text" placeholder="username" name="username" />
+
+  <h2>Password</h2>
+  <input type="password" placeholder="password" name="password" />
+  <button type="submit">Submit</button>
+</form>

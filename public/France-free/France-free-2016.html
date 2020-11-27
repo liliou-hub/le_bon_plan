@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Canvas Map</title>
+
+<style>
+.main{
+width: 800px;
+height: 350px;
+padding: 3em;
+margin-left:25%;
+background-color: #F1F1F1;
+
+}
+.texte{
+width: 800px;
+height: 350px;
+padding: 3em;
+margin-left:25%;
+background-color: #FFFFFF;
+
+
+}
+</style>
+</head> 
+ 
+ <body> 
+<div class="main">
+<h2>France free by <a href="http://cmap.comersis.com" target="_blank">c-map</a></h2>
+
+
+
+<script src="cmap/France-map.js"></script>
+<script>
+francefree();
+</script>
+
+
+
+
+</div>
+<div class="texte">
+<h3>Parametres, configuration</h3>
+<p>Utilisez de préférence un éditeur simple (type bloc-note, Notepad ++, komogo...) pour modifier le fichier de configuration de la carte.</p>
+<ol>
+<li>Ouvrez le fichier "France-map.js" contenu dans le dossier "cmap"</li>
+<li>Pour modifier les couleurs de la carte, changez les valeurs ( en rouge dans cet exemple )</li>
+<blockquote>
+<p>var mapcolor = "<font color="#DD0000"><strong>#70ABF3</strong></font>";			// couleur de fond de carte *</p>
+<p>var mapcolor_hover = "<font color="#DD0000"><strong>#FF0000</strong></font>";		// couleur de survol de la souris *</p>
+<p>var maplines = "<font color="#DD0000"><strong>#FFFFFF</strong></font>";			// couleur des traits de séparation des régions *</p>
+</blockquote>
+<p><a href="http://blog.comersis.com/commun/color-picker/selecteur-de-couleur-hexadecimale.php" target='_blank'>trouvez facilement vos codes couleur (hexadécimaux) sur notre blog</a></p>
+<li>Pour chaque région, modifiez les valeurs selon vos besoins ( en rouge dans cet exemple )</li>
+<p>R0: {</p>
+<blockquote>title: "<font color="#DD0000"><strong>Alsace</strong></font>",<br>
+			url: "<font color="#DD0000"><strong>http://mon-site.com/ma-page-Alsace.html</strong></font>",<br>
+			path: "269,69, 268,71, 267,73, 263,73, 258,71 ..."
+</blockquote>
+<p>},</p>
+<li>Enregistrez et actualisez cette page d'exemple</li>
+</ol>
+<br>
+<p>* Pour trouver facilement vos couleurs, <a href="http://blog.comersis.com/commun/color-picker/selecteur-de-couleur-hexadecimale.php" target="_blank">utilisez notre palette</a> </p>
+<p>&nbsp;</p>
+<h3>Installation</h3>
+<ol>
+<li>Commencez par transférer le dossier "cmap" et son contenu à la racine du serveur de votre site via ftp.</li>
+<li>Ensuite, sur la ou les pages où vous souhaitez voir la carte, ajoutez ces deux lignes de codes : 
+<br>
+<strong>&lt;script src=&quot;cmap/france-map.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script&gt;francefree();&lt;/script&gt;</strong>
+<br></li>
+</ol>
+
+
+
+</div>
+ 
+  </body> 
+</html>

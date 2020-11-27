@@ -1,0 +1,25 @@
+{{#if isLog }}
+{{> navbarLogin }}
+{{else }}
+{{> navbarLogout }}
+{{/if}}
+
+je suis le product
+<form enctype='multipart/form-data' action='/product' method='post'>
+    <div class="card-group">
+        <div class="card">
+            <img src='uploads/{{productPicture}}' class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{product.}}</h5>
+                <p class="card-text">{{tagProduct}}</p>
+                <p class="card-text"><small class="text-muted">{{productPrice}}</small></p>
+            </div>
+        </div>
+    </div>
+</form>
+{{!-- <enctype='multipart/form-data'>
+<img  type="file" name='productPicture'src='uploads/{{productPicture}}' >
+
+{{productName}}
+{{tagProduct}}
+{{productPrice}} --}}

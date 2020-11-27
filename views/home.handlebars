@@ -1,0 +1,36 @@
+{{#if isLog }}
+{{> navbarLogin }}
+{{else }}
+{{> navbarLogout }}
+{{/if}}
+
+<nav>
+    <li class="nav-item dropdown">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href='/Paris'>Paris</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href='/Lyon'>Lyon</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href='/Marseille'>Marseille</a>
+        </div>
+    </li>
+    
+</nav>
+
+
+<ul>
+    <li>
+        <a href='/Paris'>Paris</a>
+    </li>
+    <li>
+        <a href='/Lyon'>Lyon</a>
+    </li>
+    <li>
+        <a href='/Marseille'>Marseille</a>
+    </li>
+
+</ul>
+{{!-- <div>
+   <script src="cmap/france-map.js"></script>
+<script>francefree();</script>
+</div> --}}
