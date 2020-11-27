@@ -48,7 +48,7 @@ app.use('/products', productsRoutes);
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb+srv://le_bon_plan:ffmEBlAMgwB7BMEO@cluster0.cje39.mongodb.net/le_bon_plan?retryWrites=true&w=majority",
+  "mongodb://localhost:27017/le_bon_plan",
   {
     useNewUrlParser: true,
     useCreateIndex: true,
